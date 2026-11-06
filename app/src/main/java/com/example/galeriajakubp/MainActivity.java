@@ -50,6 +50,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (image == 0) {
+                    image = images.size() - 1;
+                } else {
+                    image--;
+                }
+            }
+        });
+
 
     }
 
